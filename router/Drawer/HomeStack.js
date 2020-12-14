@@ -1,4 +1,4 @@
-import {createStackNavigator} from "react-navigation";
+import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from "../../screens/Home/HomeScreen";
 import ActivityScreen from "../../screens/Home/ActivityScreen";
 import React from "react";
@@ -14,7 +14,7 @@ const HomeStack = createStackNavigator({
     Home: {
         screen: HomeScreen,
         navigationOptions: ({navigation}) => ({
-            title: 'Hi IGSM 2019!',
+            title: 'Hi IGSM 2021!',
             headerLeft:
                 <Icon
                     name='menu'

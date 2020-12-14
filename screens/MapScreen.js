@@ -27,7 +27,7 @@ class MapScreen extends Component {
                     error: null,
                 });
             },
-            (error) => this.setState({latitude: 52.232794, longitude: 21.018296, error: error.message}),
+            (error) => this.setState({latitude: 52.385036, longitude: 9.712801, error: error.message}),
             {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
         );
     }
@@ -57,10 +57,10 @@ class MapScreen extends Component {
                         }}>
 
                         <MapView.Marker
-                            coordinate={{latitude: 52.232353, longitude: 20.981048}}
-                            title="Warsaw Rising Museum">
+                            coordinate={{latitude: 52.385036, longitude: 9.712801}}
+                            title="University (GIH)">
                             <Icon
-                                name='account-balance'
+                                name='school'
                                 raised={true}
                                 size={15}
                                 color={colors.mintLight}
@@ -68,10 +68,10 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.241881, longitude: 21.028727}}
-                            title="Copernicus Science Centre">
+                            coordinate={{latitude: 52.376550, longitude: 9.741046}}
+                            title="Central Station">
                             <Icon
-                                name='account-balance'
+                                name='train'
                                 raised={true}
                                 size={15}
                                 color={colors.mintLight}
@@ -79,10 +79,10 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.218905, longitude: 21.009941}}
-                            title="WUT Main Canteen">
+                            coordinate={{latitude: 52.354106, longitude: 9.730391}}
+                            title="Youth hostel">
                             <Icon
-                                name='restaurant'
+                                name='hotel'
                                 raised={true}
                                 size={15}
                                 color={colors.mintLight}

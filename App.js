@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import firebaseConfig from './config/firebaseConfig';
+import { StyleSheet, Text, View } from 'react-native';
 import * as firebase from 'firebase';
+import firebaseConfig from './config/firebaseConfig';
 import {createAppContainer} from 'react-navigation';
-import RootNavigator from "./router/RootNavigator";
+import RootNavigator from './router/RootNavigator';
 import {Provider} from "unstated";
 import {registerForPushNotificationsAsync} from "./config/registerForPushNotifications";
 
@@ -16,16 +17,24 @@ const AppNavigatorContainer = createAppContainer(RootNavigator);
 class App extends Component {
     constructor(props) {
         super(props);
-        firebase.initializeApp(firebaseConfig);
+        try{
+           firebase.initializeApp(firebaseConfig);
+        }catch(err){
+            if (!/already exists/.test(err.message)) {
+                console.error('Firebase initialization error', err.stack)
+                }
+        }
         registerForPushNotificationsAsync();
     }
 
     render() {
         return (
-            <Provider>
+            <Provider> 
                 <AppNavigatorContainer/>
-            </Provider>);
+            </Provider>
+           
+        );
     }
 }
 
-export default App;
+export default App

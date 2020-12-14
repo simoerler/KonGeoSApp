@@ -1,4 +1,4 @@
-import {createDrawerNavigator} from "react-navigation";
+import { createDrawerNavigator } from 'react-navigation-drawer';
 import {Icon} from "react-native-elements";
 import ActivityScreen from "../../screens/Home/ActivityScreen";
 import colors from "../../components/colors";
@@ -9,6 +9,7 @@ import MapStack from "./MapStack";
 import NotificationsStack from "./NotificationsStack";
 import PostersStack from "./PostersStack";
 import PresentationStack from "./PresentationStack";
+import GameStack from "./GameStack";
 
 
 /*
@@ -20,7 +21,7 @@ const DrawerNavigator = createDrawerNavigator({
         Home: {
             screen: HomeStack,
             navigationOptions: {
-                drawerLabel: 'Hi IGSM 2019!',
+                drawerLabel: 'Hi IGSM 2021!',
                 drawerIcon: <Icon name='home' type='octicon'/>
             }
         },
@@ -60,6 +61,14 @@ const DrawerNavigator = createDrawerNavigator({
             navigationOptions: {
                 drawerLabel: 'Posters',
                 drawerIcon: <Icon name='file' type='octicon'/>
+            }
+        },
+
+        CityGame: {
+            screen: GameStack,
+            navigationOptions: {
+                drawerLabel: 'City Game',
+                drawerIcon: <Icon name='videogame-asset' type='material'/>
             }
         },
 

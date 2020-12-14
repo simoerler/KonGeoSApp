@@ -14,30 +14,42 @@ class ContactScreen extends React.Component {
                     <StatusBar barStyle="light-content"/>
 
                     <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => OpenAnything.Email('info@igsm2019.com')}>
-                            <Text style={cont_styles.emailText}> E-mail: info@igsm2019.com </Text>
+                        <TouchableOpacity onPress={() => OpenAnything.Email('info@igsm2021.com')}>
+                            <Text style={cont_styles.emailText}> E-mail: info@igsm2021.com </Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.singleContact}>
-                        <TouchableOpacity onPress={() => OpenAnything.Call('+48692095473')}>
-                            <Text style={cont_styles.nameText}> Marcelina Ziarno </Text>
-                            <Text style={cont_styles.numberText}> +48 692 095 473 </Text>
+                        <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
+                            <Text style={cont_styles.nameText}> Klarissa Lachmann </Text>
+                            <Text style={cont_styles.numberText}> +49 xxx </Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
-                                    source={require('../assets/images/Marcka.jpg')}
+                                    source={require('../assets/images/Klarissa.jpg')}
                                     style={{width: 60, height: 60, borderRadius: 30}}/>
                             </View>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.singleContact}>
-                        <TouchableOpacity onPress={() => OpenAnything.Call('+48514893673')}>
-                            <Text style={cont_styles.nameText}> Monika Kwiatkowska </Text>
-                            <Text style={cont_styles.numberText}> +48 514 893 673 </Text>
+                        <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
+                            <Text style={cont_styles.nameText}> Finn Boie </Text>
+                            <Text style={cont_styles.numberText}> +49 xxx </Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
-                                    source={require('../assets/images/Monix.jpg')}
+                                    source={require('../assets/images/Finn.jpg')}
+                                    style={{width: 60, height: 60, borderRadius: 30}}/>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.singleContact}>
+                        <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
+                            <Text style={cont_styles.nameText}> Jan-Eric </Text>
+                            <Text style={cont_styles.numberText}> +49 xxx </Text>
+                            <View style={cont_styles.photoContainer}>
+                                <Image
+                                    source={require('../assets/images/JanEric.jpg')}
                                     style={{width: 60, height: 60, borderRadius: 30}}/>
                             </View>
                         </TouchableOpacity>
@@ -57,13 +69,13 @@ class ContactScreen extends React.Component {
                     </View>
 
                     <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.facebook.com/igsmwarsaw/')}>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://https://www.facebook.com/igsmhannover2021/')}>
                             <Text style={cont_styles.emailText}> Our Facebook Page!</Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/igsmwarsaw2019/')}>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/igsmhannover2021/')}>
                             <Text style={cont_styles.emailText}> Visit Our Instagram!</Text>
                         </TouchableOpacity>
                     </View>

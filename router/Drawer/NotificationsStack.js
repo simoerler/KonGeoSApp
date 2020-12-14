@@ -1,4 +1,4 @@
-import {createStackNavigator} from "react-navigation";
+import { createStackNavigator } from 'react-navigation-stack';
 import React from "react";
 import {headerNavigationOptions} from "../routerTools";
 import NotificationsScreen from "../../screens/NotificationsScreen";

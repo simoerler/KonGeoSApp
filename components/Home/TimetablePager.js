@@ -2,7 +2,7 @@ import {Subscribe} from "unstated";
 import {StyleSheet, View} from 'react-native';
 import {FirebaseContainer} from "../FirebaseContainer/FirebaseContainer";
 import React, {Component} from "react";
-import {IndicatorViewPager, PagerDotIndicator} from "rn-viewpager";
+import ViewPager from '@react-native-community/viewpager';
 import {prepareTimetablePager} from "./timetableDataParsing";
 import colors from "../colors";
 

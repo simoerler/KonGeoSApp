@@ -1,6 +1,8 @@
-import {createStackNavigator} from "react-navigation";
-import React from "react";
-import DrawerNavigator from "./Drawer/DrawerNavigator";
+import * as  React from 'react';
+import { createStackNavigator } from 'react-navigation-stack';
+import DrawerNavigator from './Drawer/DrawerNavigator';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 /*
 * Navigation diagram:
@@ -16,7 +18,7 @@ const RootNavigator = createStackNavigator(
         Drawer: {screen: DrawerNavigator},
     }, {
         defaultNavigationOptions: {
-            header: null,
+            headerShown: false,
         }
     });
 
