@@ -9,7 +9,7 @@ import MapStack from "./MapStack";
 import NotificationsStack from "./NotificationsStack";
 import PostersStack from "./PostersStack";
 import PresentationStack from "./PresentationStack";
-import GameStack from "./GameStack";
+//import GameStack from "./GameStack";
 
 
 /*
@@ -64,13 +64,13 @@ const DrawerNavigator = createDrawerNavigator({
             }
         },
 
-        CityGame: {
+        /*CityGame: {
             screen: GameStack,
             navigationOptions: {
                 drawerLabel: 'City Game',
                 drawerIcon: <Icon name='videogame-asset' type='material'/>
             }
-        },
+        },*/
 
         Activity: {
             screen: ActivityScreen,

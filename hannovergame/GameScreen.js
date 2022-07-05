@@ -230,7 +230,7 @@ export default class GameScreen extends Component {
         const B = (props) => <Text style={{ fontFamily: "tw-cen-met-bold" }}>{props.children}</Text>;
 
         //do animacji
-        var mycolor = this.state.x.interpolate({
+        var mycolor = this.state.x.interpolateNode({
             inputRange: [0, 300],
             outputRange: ['rgb(87, 167, 179)', 'rgba(204, 0, 0, 0.5)']
         });

@@ -1,7 +1,7 @@
 {
   "expo": {
     "slug": "HiIGSM",
-    "icon": "./assets/images/logo.png",
+    "icon": "./assets/images/kongeos_logo.png",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
