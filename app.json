@@ -1,9 +1,9 @@
 {
   "expo": {
     "slug": "HiIGSM",
-    "icon": "./assets/images/kongeos_logo.png",
+    "icon": "./assets/images/kongeos_icon.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/startscreen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
