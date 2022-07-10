@@ -33,7 +33,7 @@ class TimetablePager extends Component<{}> {
                             <IndicatorViewPager
                                 ref={viewPager => { this.viewPager = viewPager;}}
                                 style={style.timetable}
-                                // pagerStyle={{backgroundColor: colors.mintLight}}
+                                // pagerStyle={{backgroundColor: colors.kongeosOrange}}
                                 indicator={_renderDotIndicator(7)}
                             >
                                 {pageViewsArray}
@@ -81,10 +81,10 @@ const style = StyleSheet.create({
         // position: 'relative'
     },
     dot: {
-        backgroundColor: colors.mintLight
+        backgroundColor: colors.kongeosOrange
     },
     dotSelect: {
-        backgroundColor: colors.mintDark
+        backgroundColor: colors.kongeosBlue
     },
     lineStyle: {
         borderWidth: 1,

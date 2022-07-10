@@ -5,8 +5,12 @@ const colors = {
     blue: '#1D3557',
     red: '#cc0033',
 
-    mintDark: '#54A7B2',
-    mintLight: '#E0A54C',
+    kongeosOrange: '#f48120',
+    kongeosBlue: '#1454a2',
+    kongeosGreen: '#96bd0d',
+
+   // mintDark: '#54A7B2',
+    //mintLight: '#E0A54C',
     shadow: '#bababa',
     passedEvent: '#bababa',
     //97CFD6

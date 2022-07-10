@@ -3,37 +3,37 @@ import {Icon} from "react-native-elements";
 import React from "react";
 
 export const headerNavigationOptions = ({navigation}) => ({
-    headerStyle: {backgroundColor: colors.mintDark},
+    headerStyle: {backgroundColor: colors.kongeosBlue},
     headerTintColor: colors.white,
     margin: '20',
     headerTitleStyle: {fontWeight: 'bold'},
     title: 'akuku',
-    headerRight:
+    headerRight: ()=>
         <Icon name='phone'
               color={colors.white}
               containerStyle={{marginRight: 15}}
-              underlayColor={colors.mintDark}
+              underlayColor={colors.kongeosBlue}
               onPress={() => navigation.navigate('Contact')} title='contact'/>
     ,
-    headerLeft:
+    headerLeft: () =>
         <Icon
             name='menu'
             color={colors.white}
             containerStyle={{marginLeft: 15}}
-            underlayColor={colors.mintDark}
+            underlayColor={colors.kongeosBlue}
             onPress={() => navigation.openDrawer()}/>
 });
 
 export const headerNavigationOptionsWithBackButton = ({navigation}) => ({
-    headerStyle: {backgroundColor: colors.mintDark},
+    headerStyle: {backgroundColor: colors.kongeosBlue},
     headerTintColor: colors.white,
     margin: '20',
     headerTitleStyle: {fontWeight: 'bold'},
     title: 'akuku',
-    headerRight:
+    headerRight: ()=>
         <Icon name='phone'
               color={colors.white}
               containerStyle={{marginRight: 15}}
-              underlayColor={colors.mintDark}
+              underlayColor={colors.kongeosBlue}
               onPress={() => navigation.navigate('Contact')} title='contact'/>
 });

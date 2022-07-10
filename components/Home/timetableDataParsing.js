@@ -55,7 +55,7 @@ const style = {
     heading: {
         marginLeft: '5%',
         marginRight: '5%',
-        backgroundColor: colors.mintDark,
+        backgroundColor: colors.kongeosBlue,
         width: '90%',
         height: 40,
         borderRadius: 5,

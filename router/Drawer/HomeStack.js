@@ -14,13 +14,13 @@ const HomeStack = createStackNavigator({
     Home: {
         screen: HomeScreen,
         navigationOptions: ({navigation}) => ({
-            title: 'Hi IGSM 2021!',
-            headerLeft:
+            title: 'Hi KonGeoS 2021!',
+            headerLeft: () =>
                 <Icon
                     name='menu'
                     color={colors.white}
                     containerStyle={{marginLeft: 15}}
-                    underlayColor={colors.mintDark}
+                    underlayColor={colors.kongeosBlue}
                     onPress={() => navigation.openDrawer()}/>
         })
     },

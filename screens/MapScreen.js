@@ -63,7 +63,7 @@ class MapScreen extends Component {
                                 name='school'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -74,7 +74,7 @@ class MapScreen extends Component {
                                 name='train'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -85,7 +85,7 @@ class MapScreen extends Component {
                                 name='hotel'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -96,7 +96,7 @@ class MapScreen extends Component {
                                 name='school'
                                 raised={true}
                                 size={15}
-                                color={colors.mintDark}
+                                color={colors.kongeosBlue}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -107,7 +107,7 @@ class MapScreen extends Component {
                                 name='local-bar'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -118,7 +118,7 @@ class MapScreen extends Component {
                                 name='local-bar'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -129,7 +129,7 @@ class MapScreen extends Component {
                                 name='hotel'
                                 raised={true}
                                 size={15}
-                                color={colors.mintDark}
+                                color={colors.kongeosBlue}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -140,7 +140,7 @@ class MapScreen extends Component {
                                 name='school'
                                 raised={true}
                                 size={15}
-                                color={colors.mintDark}
+                                color={colors.kongeosBlue}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -151,7 +151,7 @@ class MapScreen extends Component {
                                 name='local-bar'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -162,7 +162,7 @@ class MapScreen extends Component {
                                 name='local-bar'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -173,7 +173,7 @@ class MapScreen extends Component {
                                 name='local-bar'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -184,7 +184,7 @@ class MapScreen extends Component {
                                 name='local-parking'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -195,7 +195,7 @@ class MapScreen extends Component {
                                 name='local-dining'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -206,7 +206,7 @@ class MapScreen extends Component {
                                 name='accessibility'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -217,7 +217,7 @@ class MapScreen extends Component {
                                 name='directions-run'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -228,7 +228,7 @@ class MapScreen extends Component {
                                 name='directions-run'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -240,7 +240,7 @@ class MapScreen extends Component {
                                 type='material-community'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
@@ -252,7 +252,7 @@ class MapScreen extends Component {
                                 type='material-community'
                                 raised={true}
                                 size={15}
-                                color={colors.mintLight}
+                                color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>

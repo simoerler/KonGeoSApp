@@ -40,7 +40,7 @@ const style = {
         elevation: 2,
     },
     heading: {
-        backgroundColor: colors.mintLight,
+        backgroundColor: colors.kongeosOrange,
         width: '100%',
         height: 40,
         borderTopLeftRadius: 5,

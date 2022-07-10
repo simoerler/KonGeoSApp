@@ -5,7 +5,7 @@ import colors from "../../components/colors";
 import React from "react";
 import HomeStack from "./HomeStack";
 import ContactStack from "./ContactStack";
-import MapStack from "./MapStack";
+//import MapStack from "./MapStack";
 import NotificationsStack from "./NotificationsStack";
 import PostersStack from "./PostersStack";
 import PresentationStack from "./PresentationStack";
@@ -21,7 +21,7 @@ const DrawerNavigator = createDrawerNavigator({
         Home: {
             screen: HomeStack,
             navigationOptions: {
-                drawerLabel: 'Hi IGSM 2021!',
+                drawerLabel: 'Hi KonGeoS 2021!',
                 drawerIcon: <Icon name='home' type='octicon'/>
             }
         },
@@ -29,21 +29,21 @@ const DrawerNavigator = createDrawerNavigator({
             {
                 screen: ContactStack,
                 navigationOptions: {
-                    drawerLabel: 'Contact with Hosts',
+                    drawerLabel: 'Kontakt',
                     drawerIcon: <Icon name='phone'/>
                 }
             },
-        Map: {
+        /*Map: {
             screen: MapStack,
             navigationOptions: {
-                drawerLabel: 'IGSM map',
+                drawerLabel: 'KonGeoS map',
                 drawerIcon: <Icon name='map'/>
             }
-        },
+        },*/
         Notifications: {
             screen: NotificationsStack,
             navigationOptions: {
-                drawerLabel: 'Notifications',
+                drawerLabel: 'Benachrichtigungen',
                 drawerIcon: <Icon name='bell' type='octicon'/>
             }
         },
@@ -56,13 +56,13 @@ const DrawerNavigator = createDrawerNavigator({
             }
         },
 
-        Posters: {
+        /*Posters: {
             screen: PostersStack,
             navigationOptions: {
                 drawerLabel: 'Posters',
                 drawerIcon: <Icon name='file' type='octicon'/>
             }
-        },
+        },*/
 
         /*CityGame: {
             screen: GameStack,
@@ -81,7 +81,7 @@ const DrawerNavigator = createDrawerNavigator({
 
     }, {
         contentOptions: {
-            activeTintColor: colors.mintLight,
+            activeTintColor: colors.kongeosOrange,
         },
     }
 );

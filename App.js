@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { LogBox, StyleSheet, Text, View } from 'react-native';
 import * as firebase from 'firebase';
 import firebaseConfig from './config/firebaseConfig';
 import {createAppContainer} from 'react-navigation';
@@ -7,7 +7,7 @@ import RootNavigator from './router/RootNavigator';
 import {Provider} from "unstated";
 import {registerForPushNotificationsAsync} from "./config/registerForPushNotifications";
 
-console.disableYellowBox = true;
+LogBox.ignoreAllLogs(true);
 // console.ignoredYellowBox = [
 //     'Setting a timer'
 // ];

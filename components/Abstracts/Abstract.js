@@ -32,7 +32,7 @@ class Abstract extends Component {
                                         name='arrow-left'
                                         type='material-community'
                                         size={30}
-                                        color={colors.mintLight}
+                                        color={colors.kongeosOrange}
                                     />}
 
                                     onPress={() => this.toggleModal(!this.state.modalVisible)}/>
@@ -63,7 +63,7 @@ class Abstract extends Component {
 const styles = StyleSheet.create({
     lineStyle: {
         borderWidth: 1,
-        borderColor: colors.mintDark,
+        borderColor: colors.kongeosBlue,
         marginTop: '2%',
         borderRadius: 5,
         width: '90%',
@@ -98,14 +98,14 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start'
     },
     buttonShow: {
-        backgroundColor: colors.mintLight,
+        backgroundColor: colors.kongeosOrange,
         width: '40%',
         alignItems: 'center',
         alignContent: 'center'
     },
     titleText: {
         fontSize: 17,
-        color: colors.mintDark,
+        color: colors.kongeosBlue,
         fontWeight: 'bold',
         textAlign: 'left',
         marginLeft: '5%',
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     },
     subtitleText: {
         fontSize: 14,
-        color: colors.mintLight,
+        color: colors.kongeosOrange,
         fontWeight: 'bold',
         textAlign: 'left',
         marginLeft: '5%',
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     },
     titleTextList: {
         fontSize: 16,
-        color: colors.mintDark,
+        color: colors.kongeosBlue,
         fontWeight: 'bold',
         textAlign: 'center',
         borderRadius: 5,
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     },
     subtitleTextList: {
         fontSize: 14,
-        color: colors.mintLight,
+        color: colors.kongeosOrange,
         fontWeight: 'bold',
         textAlign: 'center',
         marginLeft: '5%',

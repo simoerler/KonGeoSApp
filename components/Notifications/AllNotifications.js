@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
 
         lineStyle: {
             borderWidth: 1,
-            borderColor: colors.mintDark,
+            borderColor: colors.kongeosBlue,
             marginTop: '2%',
             borderRadius: 5,
             width: '90%',

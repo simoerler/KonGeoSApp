@@ -14,18 +14,18 @@ class ContactScreen extends React.Component {
                     <StatusBar barStyle="light-content"/>
 
                     <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => OpenAnything.Email('info@igsm2021.com')}>
-                            <Text style={cont_styles.emailText}> E-mail: info@igsm2021.com </Text>
+                        <TouchableOpacity onPress={() => OpenAnything.Email('vorstand@kongeos.de')}>
+                            <Text style={cont_styles.emailText}> E-mail: vorstand@kongeos.de </Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.singleContact}>
                         <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
-                            <Text style={cont_styles.nameText}> Klarissa Lachmann </Text>
+                            <Text style={cont_styles.nameText}> Lena </Text>
                             <Text style={cont_styles.numberText}> +49 xxx </Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
-                                    source={require('../assets/images/Klarissa.jpg')}
+                                    source={require('../assets/images/OrganisatorIn1.png')}
                                     style={{width: 60, height: 60, borderRadius: 30}}/>
                             </View>
                         </TouchableOpacity>
@@ -33,23 +33,11 @@ class ContactScreen extends React.Component {
 
                     <View style={styles.singleContact}>
                         <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
-                            <Text style={cont_styles.nameText}> Finn Boie </Text>
+                            <Text style={cont_styles.nameText}> Orga 2 </Text>
                             <Text style={cont_styles.numberText}> +49 xxx </Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
-                                    source={require('../assets/images/Finn.jpg')}
-                                    style={{width: 60, height: 60, borderRadius: 30}}/>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
-
-                    <View style={styles.singleContact}>
-                        <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
-                            <Text style={cont_styles.nameText}> Jan-Eric </Text>
-                            <Text style={cont_styles.numberText}> +49 xxx </Text>
-                            <View style={cont_styles.photoContainer}>
-                                <Image
-                                    source={require('../assets/images/JanEric.jpg')}
+                                    source={require('../assets/images/OrganisatorIn2.png')}
                                     style={{width: 60, height: 60, borderRadius: 30}}/>
                             </View>
                         </TouchableOpacity>
@@ -58,7 +46,7 @@ class ContactScreen extends React.Component {
 
                     <View style={styles.singleContact}>
                         <TouchableOpacity onPress={() => OpenAnything.Call('112')}>
-                            <Text style={cont_styles.nameText}> Emergency Call </Text>
+                            <Text style={cont_styles.nameText}> Notruf </Text>
                             <Text style={cont_styles.numberText}> 112 </Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image

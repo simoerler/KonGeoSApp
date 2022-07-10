@@ -11,7 +11,7 @@ const MapStack = createStackNavigator({
     Map: {
         screen: MapScreen,
         navigationOptions: {
-            title: 'IGSM map',
+            title: 'KonGeoS map',
         }
     },
 }, {

@@ -65,11 +65,11 @@ export default class MapsDirections extends Component {
                         size: 26,
                         name: 'location',
                         type: 'octicon',
-                        color: colors.mintDark,
+                        color: colors.kongeosBlue,
                     }}
                     title="Get Directions"
                     type="clear"
-                    titleStyle={{ color: colors.mintDark, fontSize: 17 }}
+                    titleStyle={{ color: colors.kongeosBlue, fontSize: 17 }}
                 />
             </View>
         );

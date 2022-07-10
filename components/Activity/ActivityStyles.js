@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         marginRight: '5%',
         paddingBottom: 3,
         borderStyle:'solid', //'dotted',
-        borderColor:colors.mintDark,
+        borderColor:colors.kongeosBlue,
     },
 
     PlaceAddress: {
