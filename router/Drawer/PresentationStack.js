@@ -11,7 +11,7 @@ const PresentationStack = createStackNavigator({
     Presentations: {
         screen: PresentationsScreen,
         navigationOptions: {
-            title: 'Presentations',
+            title: 'Fachvorträge',
         }
     },
 }, {
