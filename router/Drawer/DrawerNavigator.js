@@ -51,7 +51,7 @@ const DrawerNavigator = createDrawerNavigator({
         Presentations: {
             screen: PresentationStack,
             navigationOptions: {
-                drawerLabel: 'Presentations',
+                drawerLabel: 'Fachvorträge',
                 drawerIcon: <Icon name='presentation' type='material-community'/>
             }
         },
