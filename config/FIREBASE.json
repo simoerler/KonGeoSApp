@@ -1,6 +1,5 @@
 {
-  "Test":  "value2",
-  "Programm": {
+  "Wochentag": {
     "Donnerstag": {
       "Ankunft": {
         "activityDetails": "Ankunft",
@@ -167,6 +166,46 @@
         "placeDetails": "Frühstücksraum",
         "startTime": "06:00 Uhr"
       }
+    }
+  },
+  "message": {
+    "message": "test"
+  },
+  "notifications": {
+    "Laufenten sind cute": {
+      "date": "13.07.2022",
+      "id": 2
+    },
+    "testen": {
+      "date": "14.07.2022",
+      "id": 1
+    }
+  },
+  "presentations": {
+    "author": "Nicole",
+    "content": "Test",
+    "title": "Fernerkundung",
+    "university": "Oldenburg"
+  },
+  "weekDaysArray": {
+    "Donnerstag": {
+      "Ankunft": {
+        "activityDetails": "Ankunft",
+        "adress": "Am Hbf 1, 110 Wien"
+      }
+    }
+  },
+  "weekDaysNew": {
+    "Donnerstag": {
+      "Ankunft": {
+        "activityDetails": "Ankunft in Wien",
+        "index": 1,
+        "name": "Ankunft",
+        "place": "Hauptbahnhof Wien",
+        "startTime": "14:00 Uhr"
+      },
+      "dayName": "Donnerstag",
+      "index": 1
     }
   }
 }
