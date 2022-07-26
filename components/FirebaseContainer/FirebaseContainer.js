@@ -38,7 +38,14 @@ export class FirebaseContainer extends Container {
     };
 
     connectToFirebase = () => {
-        firebase.database().ref('weekDaysNew').on('value', snap => {
+        firebase.database().ref('message').on('value', snap => {
+            this.setState({
+                weekDaysArray: snap.val()
+            });
+        AsyncStorage.setItem('weekDaysArray', JSON.stringify(snap.val()), (e) => {console.log(e)} );
+        }
+        );
+       /* firebase.database().ref('weekDaysNew').on('value', snap => {
                 this.setState({
                     weekDaysArray: snap.val()
                 });
@@ -61,7 +68,7 @@ export class FirebaseContainer extends Container {
             AsyncStorage.setItem('notificationsArray', JSON.stringify(snap.val()));
         });
 
-        firebase.database().ref('posters').on('value', snap => {
+       /* firebase.database().ref('posters').on('value', snap => {
             this.setState({
                 postersArray: snap.val()
             });
@@ -73,6 +80,6 @@ export class FirebaseContainer extends Container {
                 presentationsArray: snap.val()
             });
             AsyncStorage.setItem('presentationsArray', JSON.stringify(snap.val()));
-        })
+        })*/
     };
 }

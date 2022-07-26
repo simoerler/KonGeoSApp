@@ -14,7 +14,7 @@ const HomeStack = createStackNavigator({
     Home: {
         screen: HomeScreen,
         navigationOptions: ({navigation}) => ({
-            title: 'Hi KonGeoS 2021!',
+            title: 'Hi KonGeoS Wien 2022!',
             headerLeft: () =>
                 <Icon
                     name='menu'

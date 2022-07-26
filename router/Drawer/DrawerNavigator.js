@@ -7,7 +7,7 @@ import HomeStack from "./HomeStack";
 import ContactStack from "./ContactStack";
 //import MapStack from "./MapStack";
 import NotificationsStack from "./NotificationsStack";
-import PostersStack from "./PostersStack";
+import ProgramStack from "./ProgramStack";
 import PresentationStack from "./PresentationStack";
 //import GameStack from "./GameStack";
 
@@ -21,7 +21,7 @@ const DrawerNavigator = createDrawerNavigator({
         Home: {
             screen: HomeStack,
             navigationOptions: {
-                drawerLabel: 'Hi KonGeoS 2021!',
+                drawerLabel: 'Hi KonGeoS Wien!',
                 drawerIcon: <Icon name='home' type='octicon'/>
             }
         },
@@ -56,13 +56,13 @@ const DrawerNavigator = createDrawerNavigator({
             }
         },
 
-        /*Posters: {
-            screen: PostersStack,
+        Program: {
+            screen: ProgramStack,
             navigationOptions: {
-                drawerLabel: 'Posters',
-                drawerIcon: <Icon name='file' type='octicon'/>
+                drawerLabel: 'Programm',
+                drawerIcon: <Icon name='videogame-asset' type='material'/>
             }
-        },*/
+        },
 
         /*CityGame: {
             screen: GameStack,

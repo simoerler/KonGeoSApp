@@ -1,13 +1,13 @@
 {
   "expo": {
-    "slug": "HiIGSM",
+    "slug": "KonGeoSApp",
     "icon": "./assets/images/kongeos_icon.png",
     "splash": {
       "image": "./assets/images/startscreen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "name": "Hi!IGSM",
+    "name": "KonGeoSApp",
     "version": "0.1.3",
     "description": "",
     "assetBundlePatterns": [
@@ -18,10 +18,10 @@
       "ios"
     ],
     "ios": {
-      "bundleIdentifier": "com.igsm.hiigsm"
+      "bundleIdentifier": "com.kongeos.kongeosapp"
     },
     "android": {
-      "package": "com.igsm.hiigsm",
+      "package": "com.kongeos.kongeosapp",
       "versionCode": 4
     }
   }
