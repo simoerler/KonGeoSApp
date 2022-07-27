@@ -7,6 +7,7 @@ import colors from "../colors";
 const MainNotification = props => (
     <Subscribe to={[FirebaseContainer]}>
         {firebase => {
+            console.log("MainNotification");
             return (
                 <TouchableOpacity onPress={() => props.navigation.navigate('Notifications')} style={style.touchable}>
                     <View style={style.container}>

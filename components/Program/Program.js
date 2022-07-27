@@ -7,6 +7,7 @@ import colors from "../colors";
 const Program = props => (
     <Subscribe to={[FirebaseContainer]}>
         {firebase => {
+            console.log("Program");
             return (
                 <ScrollView style={{paddingBottom: 50}}>
                     {

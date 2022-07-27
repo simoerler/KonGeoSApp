@@ -1,6 +1,6 @@
 import {Container} from "unstated";
 import * as firebase from "firebase";
-import {AsyncStorage} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 require("firebase/database");
 
@@ -15,45 +15,63 @@ export class FirebaseContainer extends Container {
 
     constructor() {
         super();
-        this.loadLocalDataCopy();
+        //this.loadLocalDataCopy();
         this.connectToFirebase();
     }
 
     //============================================
-    loadLocalDataCopy = async () => {
-            const weekDaysData = await AsyncStorage.getItem('weekDaysArray');
-            const messageData = await AsyncStorage.getItem('message');
-            const notificationsData = await AsyncStorage.getItem('notificationsArray');
-            const presentationsData = await AsyncStorage.getItem('presentationsArray');
-            const postersData = await AsyncStorage.getItem('postersArray');
+   /* loadLocalDataCopy = async () => {
+            const weekDaysData = await AsyncStorage.getItem("/weekDaysArray");
+           // const messageData = await AsyncStorage.getItem('message');
+            //const notificationsData = await AsyncStorage.getItem('notificationsArray');
+            //const presentationsData = await AsyncStorage.getItem('presentationsArray');
+            //const postersData = await AsyncStorage.getItem('postersArray');
 
             if(weekDaysData)
+                console.log("HERE I AM");
                 this.setState({
                     weekDaysArray: JSON.parse(weekDaysData),
-                    message: JSON.parse(messageData),
-                    notificationsArray: JSON.parse(notificationsData),
-                    presentationsArray: JSON.parse(presentationsData),
-                    postersArray: JSON.parse(postersData),
+                    //message: JSON.parse(messageData),
+                    //notificationsArray: JSON.parse(notificationsData),
+                   // presentationsArray: JSON.parse(presentationsData),
+                   // postersArray: JSON.parse(postersData),
                 });
-    };
+    };*/
 
     connectToFirebase = () => {
-        firebase.database().ref('message').on('value', snap => {
+        console.log("I AM HERE!!!");
+        //var ref = ;
+        /*ref.on("value", function(snapshot) {
+            console.log(snapshot.val());
+         }, function (error) {
+            console.log("Error: " + error.code);
+         });*/
+
+        
+         firebase.database().ref("/message/message").on("value", snap => {
             this.setState({
-                weekDaysArray: snap.val()
+                message: snap.val()
             });
-        AsyncStorage.setItem('weekDaysArray', JSON.stringify(snap.val()), (e) => {console.log(e)} );
+            console.log(snap.val());
+            console.log("I AM also HERE!!!");
+        AsyncStorage.setItem('message', JSON.stringify(snap.val()), (e) => {console.log(e)} );
         }
         );
-       /* firebase.database().ref('weekDaysNew').on('value', snap => {
+        console.log("I AM HERE as well !!!");
+       
+       
+        firebase.database().ref('/Wochentag/').on("value", snap => {
                 this.setState({
                     weekDaysArray: snap.val()
                 });
+                console.log(snap.val());
+                console.log("hierhierhier");
             AsyncStorage.setItem('weekDaysArray', JSON.stringify(snap.val()), (e) => {console.log(e)} );
             }
         );
+        console.log("hier");
 
-        firebase.database().ref('message').on('value', snap => {
+       /* firebase.database().ref('message').on('value', snap => {
                 this.setState({
                     message: snap.val()
                 });
@@ -66,7 +84,7 @@ export class FirebaseContainer extends Container {
                 notificationsArray: snap.val()
             });
             AsyncStorage.setItem('notificationsArray', JSON.stringify(snap.val()));
-        });
+        });*/
 
        /* firebase.database().ref('posters').on('value', snap => {
             this.setState({

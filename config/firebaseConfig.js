@@ -11,7 +11,7 @@ const firebaseConfig = {
     storageBucket: "kongeosapp.appspot.com",
     messagingSenderId: "842006962157",
     appId: "1:842006962157:web:259cc19385fbd4cad5d1e4",
-    databaseURL: "https://kongeosapp.firebase.google.com/",
+    databaseURL: "https://kongeosapp-default-rtdb.europe-west1.firebasedatabase.app",
     measurementId: "G-EYMGWZJ3WC"
 };
 
