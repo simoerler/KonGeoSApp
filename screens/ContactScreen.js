@@ -14,8 +14,8 @@ class ContactScreen extends React.Component {
                     <StatusBar barStyle="light-content"/>
 
                     <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => OpenAnything.Email('vorstand@kongeos.de')}>
-                            <Text style={cont_styles.emailText}> E-mail: vorstand@kongeos.de </Text>
+                        <TouchableOpacity onPress={() => OpenAnything.Email('kongeos2022wien@gmail.com')}>
+                            <Text style={cont_styles.emailText}> E-mail: kongeos2022wien@gmail.com </Text>
                         </TouchableOpacity>
                     </View>
 
@@ -57,26 +57,26 @@ class ContactScreen extends React.Component {
                     </View>
 
                     <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://https://www.facebook.com/igsmhannover2021/')}>
-                            <Text style={cont_styles.emailText}> Our Facebook Page!</Text>
-                        </TouchableOpacity>
-                    </View>
-
-                    <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/igsmhannover2021/')}>
-                            <Text style={cont_styles.emailText}> Visit Our Instagram!</Text>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/kongeos2022wien/')}>
+                            <Text style={cont_styles.emailText}> Instagram-Seite aufrufen!</Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://chat.whatsapp.com/CPsAboqS4N29dpDxalfZ6z')}>
-                            <Text style={cont_styles.emailText}>Join our WhatsApp Group! </Text>
+                            <Text style={cont_styles.emailText}>WhatsApp Gruppe beitreten! </Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.mailContainer}>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://kongeos.xyz')}>
+                            <Text style={cont_styles.emailText}>KonGeoS Webseite aufrufen! </Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://1drv.ms/b/s!AkDtiNeUNXnNnzfsdyckio7cYWGj')}>
-                            <Text style={cont_styles.emailText}>Privacy policy</Text>
+                            <Text style={cont_styles.emailText}>Datenschutzerklärung</Text>
                         </TouchableOpacity>
                     </View>
 
