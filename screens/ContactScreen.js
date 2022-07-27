@@ -69,6 +69,12 @@ class ContactScreen extends React.Component {
                     </View>
 
                     <View style={styles.mailContainer}>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://kongeos.xyz')}>
+                            <Text style={cont_styles.emailText}>KonGeoS Webseite aufrufen! </Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://1drv.ms/b/s!AkDtiNeUNXnNnzfsdyckio7cYWGj')}>
                             <Text style={cont_styles.emailText}>Datenschutzerklärung</Text>
                         </TouchableOpacity>
