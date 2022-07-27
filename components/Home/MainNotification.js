@@ -12,7 +12,7 @@ const MainNotification = props => (
                 <TouchableOpacity onPress={() => props.navigation.navigate('Notifications')} style={style.touchable}>
                     <View style={style.container}>
                         <View style={style.heading}>
-                            <Text style={style.titleText}> Notifications </Text>
+                            <Text style={style.titleText}> Benachrichtigungen </Text>
                         </View>
                         <Text style={style.notificationsText}> {firebase.state.message} </Text>
                     </View>
