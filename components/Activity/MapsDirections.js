@@ -17,7 +17,7 @@ export default class MapsDirections extends Component {
             error: null,
         };
     }
-    componentDidMount() {
+   /* componentDidMount() {
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 this.setState({
@@ -29,13 +29,13 @@ export default class MapsDirections extends Component {
             (error) => this.setState({ error: error.message }),
             { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
         );
-    }
+    }*/
 
     handleGetDirections = () => {
         const data = {
             source: {
-                latitude: this.state.latitude,
-                longitude: this.state.longitude
+                latitude: 48, //this.state.latitude,
+                longitude: 17 //this.state.longitude
             },
             destination: {
                 latitude: this.props.DestinationLatitude,

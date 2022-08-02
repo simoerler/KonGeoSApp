@@ -25,6 +25,7 @@ import MainNotification from "../../components/Home/MainNotification";
              <StatusBar barStyle="light-content"/>
              <View style={{height: '97%', marginTop: '3%'} }>
                  <MainNotification navigation={props.navigation}/>
+                 <TimetablePager navigation={props.navigation}/>
              </View>
          </View>
      )

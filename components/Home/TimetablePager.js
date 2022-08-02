@@ -2,42 +2,41 @@ import {Subscribe} from "unstated";
 import {StyleSheet, View} from 'react-native';
 import {FirebaseContainer} from "../FirebaseContainer/FirebaseContainer";
 import React, {Component} from "react";
-import ViewPager from '@react-native-community/viewpager';
+import PagerView from 'react-native-pager-view';
 import {prepareTimetablePager} from "./timetableDataParsing";
 import colors from "../colors";
 
 class TimetablePager extends Component<{}> {
     constructor(props) {
         super(props);
-        this.viewPager = React.createRef();
+       // this.viewPager = React.createRef();
         this.actualDate = dateChecker();
     }
 
-    moveToFirstPage = (firstPage) => {
-        if (this.viewPager.setPage) {
-            this.viewPager.setPage(firstPage);
-            this.moveToFirstPage = () => {{/* Intentionally disabled after first time */}};
-        }
-    };
+    //moveToFirstPage = (firstPage) => {
+    //    if (this.viewPager.setPage) {
+    //        this.viewPager.setPage(firstPage);
+    //        this.moveToFirstPage = () => {{/* Intentionally disabled after first time */}};
+    //    }
+    //};
 
     render() {
         return (
             <Subscribe to={[FirebaseContainer]}>
                 {firebase => {
 
-                    this.moveToFirstPage(this.actualDate.dayOfConference);
+                   // this.moveToFirstPage(this.actualDate.dayOfConference);
 
                     const pageViewsArray = prepareTimetablePager(firebase.state.weekDaysArray, this.props.navigation, this.actualDate);
                     return (
                         <View style={{flex: 1}}>
-                            <IndicatorViewPager
-                                ref={viewPager => { this.viewPager = viewPager;}}
+                            <PagerView
                                 style={style.timetable}
                                 // pagerStyle={{backgroundColor: colors.kongeosOrange}}
-                                indicator={_renderDotIndicator(7)}
+                                initialPage={0}
                             >
                                 {pageViewsArray}
-                            </IndicatorViewPager>
+                            </PagerView>
                             {/*<View style={style.lineStyle}/>*/}
                         </View>
                     );
