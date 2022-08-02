@@ -60,7 +60,7 @@ export class FirebaseContainer extends Container {
         console.log("I AM HERE as well !!!");
        
        
-        firebase.database().ref('/Wochentag/').on("value", snap => {
+        firebase.database().ref('/Zeitplan/').on("value", snap => {
                 this.setState({
                     weekDaysArray: snap.val()
                 });
@@ -77,14 +77,14 @@ export class FirebaseContainer extends Container {
                 });
             AsyncStorage.setItem('message', JSON.stringify(snap.val()));
             }
-        );
+        );*/
 
         firebase.database().ref('notifications').on('value', snap => {
             this.setState({
                 notificationsArray: snap.val()
             });
             AsyncStorage.setItem('notificationsArray', JSON.stringify(snap.val()));
-        });*/
+        });
 
        /* firebase.database().ref('posters').on('value', snap => {
             this.setState({

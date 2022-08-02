@@ -7,11 +7,11 @@ import colors from "../colors";
 
 const ActivityDetails = props => {
     const {navigation} = props;
-    const activityDetails = navigation.getParam('activity', 'Brak danych');
+    const activityDetails = navigation.getParam('activity', 'default value');
     console.log(activityDetails);
 
     let image = require('../../assets/images/Places/warsaw.jpg');
-    if (activityDetails.place === "Kawęczyn")
+    /*if (activityDetails.place === "Kawęczyn")
         image = require('../../assets/images/Places/kaweczyn.jpg');
     if (activityDetails.place === "Patchwork Warsaw Hostel")
         image = require('../../assets/images/Places/patch.jpg');
@@ -40,7 +40,7 @@ const ActivityDetails = props => {
     if (activityDetails.name === "Museum")
         image = require('../../assets/images/Places/museum.jpg');
     if (activityDetails.name === "Check-in" || activityDetails.name === "Check-out")
-        image = require('../../assets/images/Places/check-in.jpg');
+        image = require('../../assets/images/Places/check-in.jpg');*/
 
 
     return (
