@@ -3,7 +3,7 @@
     "slug": "KonGeoSApp",
     "icon": "./assets/images/kongeos_icon.png",
     "splash": {
-      "image": "./assets/images/startscreen.png",
+      "image": "./assets/images/kongeosStartseite.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

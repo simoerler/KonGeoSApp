@@ -2,6 +2,7 @@ import getDirections from 'react-native-google-maps-directions'
 import {View, Text} from 'react-native';
 import React, { Component } from 'react';
 import {Button} from "react-native-elements";
+import GetLocation from 'react-native-get-location'
 import colors from "../colors";
 import styles from "./ActivityStyles";
 
@@ -17,25 +18,29 @@ export default class MapsDirections extends Component {
             error: null,
         };
     }
-   /* componentDidMount() {
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                this.setState({
-                    latitude: position.coords.latitude,
-                    longitude: position.coords.longitude,
-                    error: null,
-                });
-            },
-            (error) => this.setState({ error: error.message }),
-            { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
-        );
-    }*/
+    componentDidMount() {
+        GetLocation.getCurrentPosition({
+            enableHighAccuracy: true,
+            timeout: 15000,
+        })
+        .then(location => {
+            console.log(location);
+            this.setState({
+                latitude: location.coords.latitude,
+                longitude: location.coords.longitude,
+                error: null,})
+        })
+        .catch(error => {
+            const { code, message } = error;
+            console.warn(code, message);
+        });
+    }
 
     handleGetDirections = () => {
         const data = {
             source: {
-                latitude: 48, //this.state.latitude,
-                longitude: 17 //this.state.longitude
+                latitude: this.state.latitude,
+                longitude: this.state.longitude
             },
             destination: {
                 latitude: this.props.DestinationLatitude,
