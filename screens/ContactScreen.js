@@ -58,19 +58,31 @@ class ContactScreen extends React.Component {
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/kongeos2022wien/')}>
-                            <Text style={cont_styles.emailText}> Instagram-Seite aufrufen!</Text>
+                            <Text style={cont_styles.emailText}> KonGeoS Wien Instagram aufrufen</Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://chat.whatsapp.com/CPsAboqS4N29dpDxalfZ6z')}>
-                            <Text style={cont_styles.emailText}>WhatsApp Gruppe beitreten! </Text>
+                            <Text style={cont_styles.emailText}>WhatsApp Gruppe beitreten </Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.mailContainer}>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://wien22.kongeos.xyz')}>
+                            <Text style={cont_styles.emailText}>KonGeoS Wien Webseite aufrufen </Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://kongeos.xyz')}>
-                            <Text style={cont_styles.emailText}>KonGeoS Webseite aufrufen! </Text>
+                            <Text style={cont_styles.emailText}>KonGeoS Webseite aufrufen </Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.mailContainer}>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/kongeos_dach/')}>
+                            <Text style={cont_styles.emailText}> KonGeoS Instagram aufrufen</Text>
                         </TouchableOpacity>
                     </View>
 
