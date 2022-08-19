@@ -24,7 +24,7 @@ export default class MapsDirections extends Component {
             timeout: 15000,
         })
         .then(location => {
-            console.log(location);
+            console.log("Location: "+ location);
             this.setState({
                 latitude: location.coords.latitude,
                 longitude: location.coords.longitude,

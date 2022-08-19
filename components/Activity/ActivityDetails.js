@@ -8,7 +8,7 @@ import colors from "../colors";
 const ActivityDetails = props => {
     const {navigation} = props;
     const activityDetails = navigation.getParam('activity', 'default value');
-    console.log(activityDetails);
+    console.log("ActivityDetails: " + activityDetails);
 
     let image = require('../../assets/images/Places/warsaw.jpg');
     /*if (activityDetails.place === "Kawęczyn")

@@ -28,7 +28,6 @@ export class FirebaseContainer extends Container {
             //const postersData = await AsyncStorage.getItem('postersArray');
 
             if(weekDaysData)
-                console.log("HERE I AM");
                 this.setState({
                     weekDaysArray: JSON.parse(weekDaysData),
                     //message: JSON.parse(messageData),
@@ -39,7 +38,6 @@ export class FirebaseContainer extends Container {
     };*/
 
     connectToFirebase = () => {
-        console.log("I AM HERE!!!");
         //var ref = ;
         /*ref.on("value", function(snapshot) {
             console.log(snapshot.val());
@@ -52,24 +50,19 @@ export class FirebaseContainer extends Container {
             this.setState({
                 message: snap.val()
             });
-            console.log(snap.val());
-            console.log("I AM also HERE!!!");
+           // console.log(snap.val());
         AsyncStorage.setItem('message', JSON.stringify(snap.val()), (e) => {console.log(e)} );
         }
-        );
-        console.log("I AM HERE as well !!!");
-       
+        );       
        
         firebase.database().ref('/Zeitplan/').on("value", snap => {
                 this.setState({
                     weekDaysArray: snap.val()
                 });
-                console.log(snap.val());
-                console.log("hierhierhier");
+                //console.log(snap.val());
             AsyncStorage.setItem('weekDaysArray', JSON.stringify(snap.val()), (e) => {console.log(e)} );
             }
         );
-        console.log("hier");
 
        /* firebase.database().ref('message').on('value', snap => {
                 this.setState({
