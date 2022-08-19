@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, View, ActivityIndicator} from 'react-native';
 import MapView from 'react-native-maps';
+import GetLocation from 'react-native-get-location'
 import colors from "../components/colors";
 import {Icon} from "react-native-elements";
 
@@ -19,17 +20,22 @@ class MapScreen extends Component {
     }
 
     componentDidMount() {
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                this.setState({
-                    latitude: position.coords.latitude,
-                    longitude: position.coords.longitude,
-                    error: null,
-                });
-            },
-            (error) => this.setState({latitude: 52.385036, longitude: 9.712801, error: error.message}),
-            {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
-        );
+        GetLocation.getCurrentPosition({
+            enableHighAccuracy: true,
+            timeout: 15000,
+        })
+        .then(location => {
+            console.log("Location:" + location);
+            this.setState({
+                latitude: location.coords.latitude,
+                longitude: location.coords.longitude,
+                error: null,})
+        })
+        .catch(error => {
+            this.setState({latitude: 52.385036, longitude: 9.712801, error: error.message});
+            const { code, message } = error;
+            console.warn(code, message);
+        });
     }
 
     // componentWillMount() {

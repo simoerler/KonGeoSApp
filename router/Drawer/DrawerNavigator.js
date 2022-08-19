@@ -5,7 +5,7 @@ import colors from "../../components/colors";
 import React from "react";
 import HomeStack from "./HomeStack";
 import ContactStack from "./ContactStack";
-//import MapStack from "./MapStack";
+import MapStack from "./MapStack";
 import NotificationsStack from "./NotificationsStack";
 import ProgramStack from "./ProgramStack";
 import PresentationStack from "./PresentationStack";
@@ -33,13 +33,13 @@ const DrawerNavigator = createDrawerNavigator({
                     drawerIcon: <Icon name='phone'/>
                 }
             },
-        /*Map: {
+        Map: {
             screen: MapStack,
             navigationOptions: {
                 drawerLabel: 'KonGeoS map',
                 drawerIcon: <Icon name='map'/>
             }
-        },*/
+        },
         Notifications: {
             screen: NotificationsStack,
             navigationOptions: {
