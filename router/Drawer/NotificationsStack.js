@@ -11,7 +11,7 @@ const NotificationsStack = createStackNavigator({
     Notifications: {
         screen: NotificationsScreen,
         navigationOptions: {
-            title: 'Notifications',
+            title: 'Benachrichtigungen',
         }
     },
 }, {

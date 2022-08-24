@@ -11,7 +11,7 @@ const ContactStack = createStackNavigator({
     Contact: {
         screen: ContactScreen,
         navigationOptions: {
-            title: 'Kontakte',
+            title: 'Kontaktiere uns!',
         }
     },
 }, {

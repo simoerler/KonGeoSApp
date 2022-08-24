@@ -72,7 +72,7 @@ export default class MapsDirections extends Component {
                         type: 'octicon',
                         color: colors.kongeosBlue,
                     }}
-                    title="Get Directions"
+                    title="Route anzeigen"
                     type="clear"
                     titleStyle={{ color: colors.kongeosBlue, fontSize: 17 }}
                 />

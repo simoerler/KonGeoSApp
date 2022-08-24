@@ -20,7 +20,8 @@ class MapScreen extends Component {
     }
 
     componentDidMount() {
-        GetLocation.getCurrentPosition({
+        this.setState({latitude:  48.2015, longitude: 16.36741, error:null});
+       /* GetLocation.getCurrentPosition({
             enableHighAccuracy: true,
             timeout: 15000,
         })
@@ -29,13 +30,14 @@ class MapScreen extends Component {
             this.setState({
                 latitude: location.coords.latitude,
                 longitude: location.coords.longitude,
-                error: null,})
+                error: null})
         })
         .catch(error => {
-            this.setState({latitude: 52.385036, longitude: 9.712801, error: error.message});
+            this.setState({latitude:  48.2015, longitude: 16.361741, error: error.message});
             const { code, message } = error;
             console.warn(code, message);
-        });
+            console.log("ERROR in MAP");
+        });*/
     }
 
     // componentWillMount() {
@@ -50,21 +52,19 @@ class MapScreen extends Component {
                     <MapView
                         customMapStyle={mapStyle}
                         style={styles.map}
-                        showsUserLocation={true}
-                        showsMyLocationButton={true}
                         showsScale={true}
                         showsCompass={true}
                         showsPointsOfInterest={false}
                         initialRegion={{
-                            latitude: this.state.latitude,
-                            longitude: this.state.longitude,
+                            latitude:  48.195,
+                            longitude: 16.369,
                             latitudeDelta: 0.03,
                             longitudeDelta: 0.02
                         }}>
 
                         <MapView.Marker
-                            coordinate={{latitude: 52.385036, longitude: 9.712801}}
-                            title="University (GIH)">
+                            coordinate={{latitude: 48.2015749, longitude: 16.36174125}}
+                            title="TU Wien">
                             <Icon
                                 name='school'
                                 raised={true}
@@ -74,8 +74,8 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.376550, longitude: 9.741046}}
-                            title="Central Station">
+                            coordinate={{latitude: 48.1852640, longitude: 16.3763637}}
+                            title="Hauptbahnhof">
                             <Icon
                                 name='train'
                                 raised={true}
@@ -85,7 +85,7 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.354106, longitude: 9.730391}}
+                            coordinate={{latitude: 48.196406, longitude: 16.369672}}
                             title="Youth hostel">
                             <Icon
                                 name='hotel'
@@ -96,10 +96,10 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.217937, longitude: 21.010257}}
-                            title="CZIiTT">
+                            coordinate={{latitude: 48.20518009045662, longitude:  16.359867730646407}}
+                            title="Naturhistorisches Museum Wien">
                             <Icon
-                                name='school'
+                                name='museum'
                                 raised={true}
                                 size={15}
                                 color={colors.kongeosBlue}
@@ -107,32 +107,10 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.221455, longitude: 21.007233}}
-                            title="Building of Faculty of Physics WUT">
+                            coordinate={{latitude: 48.19042486183227, longitude:  16.317866338307887}}
+                            title="Technisches Museum Wien">
                             <Icon
-                                name='local-bar'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 52.232404, longitude: 21.018069}}
-                            title="Club Stereo">
-                            <Icon
-                                name='local-bar'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 52.232794, longitude: 21.018296}}
-                            title="Patchwork Warsaw Hostel">
-                            <Icon
-                                name='hotel'
+                                name='museum'
                                 raised={true}
                                 size={15}
                                 color={colors.kongeosBlue}
@@ -140,10 +118,32 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.220521, longitude: 21.010488}}
-                            title="Main building of WUT">
+                            coordinate={{latitude: 48.208059565762625, longitude:  16.3587301487519}}
+                            title="Parlament">
                             <Icon
-                                name='school'
+                                name='museum'
+                                raised={true}
+                                size={15}
+                                color={colors.kongeosBlue}
+                                reverse={true}
+                            />
+                        </MapView.Marker>
+                        <MapView.Marker
+                            coordinate={{latitude: 48.20827478137735, longitude: 16.36834293331926}}
+                            title="Time Travel Vienna">
+                            <Icon
+                                name='museum'
+                                raised={true}
+                                size={15}
+                                color={colors.kongeosBlue}
+                                reverse={true}
+                            />
+                        </MapView.Marker>
+                        <MapView.Marker
+                            coordinate={{latitude: 48.208338945585346, longitude: 16.373468607462957}}
+                            title="Stephansdom">
+                            <Icon
+                                name='museum'
                                 raised={true}
                                 size={15}
                                 color={colors.kongeosBlue}

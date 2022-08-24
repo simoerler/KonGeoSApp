@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
   whiteBigContainer: {
     backgroundColor: colors.white,
     width: '90%',
-    height: 60,
     position: 'relative',
     marginTop: 5,
     marginBottom: 3,

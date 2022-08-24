@@ -9,6 +9,8 @@ import MapStack from "./MapStack";
 import NotificationsStack from "./NotificationsStack";
 import ProgramStack from "./ProgramStack";
 import PresentationStack from "./PresentationStack";
+import AGStack from "./AGStack";
+import SponsorStack from "./SponsorStack";
 //import GameStack from "./GameStack";
 
 
@@ -36,7 +38,7 @@ const DrawerNavigator = createDrawerNavigator({
         Map: {
             screen: MapStack,
             navigationOptions: {
-                drawerLabel: 'KonGeoS map',
+                drawerLabel: 'KonGeoS Karte',
                 drawerIcon: <Icon name='map'/>
             }
         },
@@ -52,6 +54,22 @@ const DrawerNavigator = createDrawerNavigator({
             screen: PresentationStack,
             navigationOptions: {
                 drawerLabel: 'Fachvorträge',
+                drawerIcon: <Icon name='presentation' type='material-community'/>
+            }
+        },
+
+        AGs: {
+            screen: AGStack,
+            navigationOptions: {
+                drawerLabel: 'AGs',
+                drawerIcon: <Icon name='presentation' type='material-community'/>
+            }
+        },
+
+        Sponsoren: {
+            screen: SponsorStack,
+            navigationOptions: {
+                drawerLabel: 'Sponsoren',
                 drawerIcon: <Icon name='presentation' type='material-community'/>
             }
         },
