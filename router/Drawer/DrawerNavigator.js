@@ -9,6 +9,7 @@ import MapStack from "./MapStack";
 import NotificationsStack from "./NotificationsStack";
 import ProgramStack from "./ProgramStack";
 import PresentationStack from "./PresentationStack";
+import StadtexkursionStack from "./StadtexkursionStack";
 import AGStack from "./AGStack";
 import SponsorStack from "./SponsorStack";
 //import GameStack from "./GameStack";
@@ -50,11 +51,18 @@ const DrawerNavigator = createDrawerNavigator({
             }
         },
 
+        Stadtexkursionen: {
+            screen: StadtexkursionStack,
+            navigationOptions: {
+                drawerLabel: 'Stadtexkursionen',
+                drawerIcon: <Icon name='bank' type='material-community'/>
+            }
+        },
         Presentations: {
             screen: PresentationStack,
             navigationOptions: {
-                drawerLabel: 'Fachvorträge',
-                drawerIcon: <Icon name='presentation' type='material-community'/>
+                drawerLabel: 'Fachexkursionen',
+                drawerIcon: <Icon name='traffic-cone' type='material-community'/>
             }
         },
 
@@ -70,7 +78,7 @@ const DrawerNavigator = createDrawerNavigator({
             screen: SponsorStack,
             navigationOptions: {
                 drawerLabel: 'Sponsoren',
-                drawerIcon: <Icon name='presentation' type='material-community'/>
+                drawerIcon: <Icon name='currency-eur' type='material-community'/>
             }
         },
 

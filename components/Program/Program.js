@@ -8,6 +8,7 @@ const prepareWeekday =(weekDay, navigation) => {
     const eventsArray = [];
     weekDay['Activities'].map((activity, index) =>{
             eventsArray.push(
+                <View><Text style={styles.eventText}>{weekDay.dayName}</Text>
                 <TouchableOpacity key={activity.name + weekDay.dayName + index} activeOpacity={0.8}
                               onPress={() => navigation.navigate('Activity', {activity: activity})}>
                 <View style={styles.event} key={activity.name + weekDay.dayName}>
@@ -16,6 +17,7 @@ const prepareWeekday =(weekDay, navigation) => {
                     <Text style={styles.placeText}>{activity.place}</Text>
                 </View>
             </TouchableOpacity>
+            </View>
             )
     });
     return eventsArray;

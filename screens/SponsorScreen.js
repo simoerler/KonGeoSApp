@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, StatusBar, Text, TouchableOpacity, View} from 'react-native';
+import {Image, ScrollView, StatusBar, Text, TouchableOpacity, View} from 'react-native';
 import * as OpenAnything from 'react-native-openanything';
 import styles from '../components/styles';
 import cont_styles from '../components/cont_style';
@@ -9,7 +9,7 @@ class SponsorScreen extends React.Component {
 
     render() {
         return (
-            <View>
+            <ScrollView>
                 <View style={{height: '90%'}}>
                     <StatusBar barStyle="light-content"/>
 
@@ -32,7 +32,7 @@ class SponsorScreen extends React.Component {
                     </View>
 
                 </View>
-            </View>
+            </ScrollView>
         )
     }
 }

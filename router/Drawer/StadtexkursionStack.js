@@ -1,15 +1,15 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import React from "react";
 import {headerNavigationOptions} from "../routerTools";
-import PresentationsScreen from "../../screens/PresentationsScreen";
+import StadtexkursionScreen from "../../screens/StadtexkursionScreen";
 
 /*
 * Stack which makes it possible to attach additional screens available only from MapScreen
 * */
 
-const PresentationStack = createStackNavigator({
-    Presentations: {
-        screen: PresentationsScreen,
+const StadtexkursionStack = createStackNavigator({
+    Stadtexkursion: {
+        screen: StadtexkursionScreen,
         navigationOptions: {
             title: 'Fachexkursionen',
         }
@@ -18,4 +18,4 @@ const PresentationStack = createStackNavigator({
     defaultNavigationOptions: headerNavigationOptions
 });
 
-export default PresentationStack
+export default StadtexkursionStack
