@@ -63,8 +63,19 @@ class MapScreen extends Component {
                         }}>
 
                         <MapView.Marker
-                            coordinate={{latitude: 48.2015749, longitude: 16.36174125}}
-                            title="TU Wien">
+                            coordinate={{latitude: 48.19879240550767, longitude: 16.367422409222545}}
+                            title="Freihaus TU Wien">
+                            <Icon
+                                name='school'
+                                raised={true}
+                                size={15}
+                                color={colors.kongeosOrange}
+                                reverse={true}
+                            />
+                        </MapView.Marker>
+                        <MapView.Marker
+                            coordinate={{latitude: 48.19640597839531, longitude: 16.3696721919337}}
+                            title="Gußhaus TU Wien">
                             <Icon
                                 name='school'
                                 raised={true}
@@ -85,8 +96,8 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 48.196406, longitude: 16.369672}}
-                            title="Youth hostel">
+                            coordinate={{latitude: 48.201574297382265, longitude: 16.362008882939314}}
+                            title="Unterkunft">
                             <Icon
                                 name='hotel'
                                 raised={true}
@@ -162,106 +173,17 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.202950, longitude: 21.001073}}
-                            title='"Mechanik" Club'>
+                            coordinate={{latitude: 48.1969455289014 longitude: 16.360785301288203}}
+                            title='Saurier-Unterkunft'>
                             <Icon
-                                name='local-bar'
+                                name='hotel'
                                 raised={true}
                                 size={15}
                                 color={colors.kongeosOrange}
                                 reverse={true}
                             />
                         </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 52.211594, longitude: 21.010220}}
-                            title='"Stodoła" Club'>
-                            <Icon
-                                name='local-bar'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 51.938917, longitude: 20.912224}}
-                            title='Parking'>
-                            <Icon
-                                name='local-parking'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 51.937335, longitude: 20.913795}}
-                            title='Bread baking'>
-                            <Icon
-                                name='local-dining'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 51.937879, longitude: 20.913646}}
-                            title='Dances \ Flankyball'>
-                            <Icon
-                                name='accessibility'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 51.937935, longitude: 20.912792}}
-                            title='Geo-Olympics II'>
-                            <Icon
-                                name='directions-run'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 51.938194, longitude: 20.914402}}
-                            title='Geo-Olympics I'>
-                            <Icon
-                                name='directions-run'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 51.938267, longitude: 20.913999}}
-                            title='Volleyball'>
-                            <Icon
-                                name='volleyball'
-                                type='material-community'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
-                            coordinate={{latitude: 51.938495, longitude: 20.913130}}
-                            title='Football'>
-                            <Icon
-                                name='soccer'
-                                type='material-community'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
+                        
 
                     </MapView>
                     :
