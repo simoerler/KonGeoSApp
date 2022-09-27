@@ -21,23 +21,11 @@ class ContactScreen extends React.Component {
 
                     <View style={styles.singleContact}>
                         <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
-                            <Text style={cont_styles.nameText}> Lena </Text>
-                            <Text style={cont_styles.numberText}> +49 xxx </Text>
+                            <Text style={cont_styles.nameText}> Orga-Team Notfallnummer </Text>
+                            <Text style={cont_styles.numberText}> +49 152 23494382 </Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
                                     source={require('../assets/images/OrganisatorIn1.png')}
-                                    style={{width: 60, height: 60, borderRadius: 30}}/>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
-
-                    <View style={styles.singleContact}>
-                        <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
-                            <Text style={cont_styles.nameText}> Orga 2 </Text>
-                            <Text style={cont_styles.numberText}> +49 xxx </Text>
-                            <View style={cont_styles.photoContainer}>
-                                <Image
-                                    source={require('../assets/images/OrganisatorIn2.png')}
                                     style={{width: 60, height: 60, borderRadius: 30}}/>
                             </View>
                         </TouchableOpacity>
@@ -47,7 +35,7 @@ class ContactScreen extends React.Component {
                     <View style={styles.singleContact}>
                         <TouchableOpacity onPress={() => OpenAnything.Call('112')}>
                             <Text style={cont_styles.nameText}> Notruf </Text>
-                            <Text style={cont_styles.numberText}> 112 </Text>
+                            <Text style={cont_styles.numberText}> 144 </Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
                                     source={require('../assets/images/ambulance-01.jpg')}
@@ -56,39 +44,45 @@ class ContactScreen extends React.Component {
                         </TouchableOpacity>
                     </View>
 
+                    <View style={styles.singleContact}>
+                        <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
+                            <Text style={cont_styles.nameText}> Polizei </Text>
+                            <Text style={cont_styles.numberText}> 133 </Text>
+                            <View style={cont_styles.photoContainer}>
+                                <Image
+                                    source={require('../assets/images/OrganisatorIn2.png')}
+                                    style={{width: 60, height: 60, borderRadius: 30}}/>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
+
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/kongeos2022wien/')}>
-                            <Text style={cont_styles.emailText}> KonGeoS Wien Instagram aufrufen</Text>
+                            <Text style={cont_styles.emailText}> KonGeoS Wien Instagram </Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://chat.whatsapp.com/CPsAboqS4N29dpDxalfZ6z')}>
-                            <Text style={cont_styles.emailText}>WhatsApp Gruppe beitreten </Text>
+                            <Text style={cont_styles.emailText}> Wien WhatsApp Gruppe beitreten </Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://wien22.kongeos.xyz')}>
-                            <Text style={cont_styles.emailText}>KonGeoS Wien Webseite aufrufen </Text>
+                            <Text style={cont_styles.emailText}>KonGeoS Wien Webseite  </Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://kongeos.xyz')}>
-                            <Text style={cont_styles.emailText}>KonGeoS Webseite aufrufen </Text>
+                            <Text style={cont_styles.emailText}>KonGeoS Webseite  </Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/kongeos_dach/')}>
-                            <Text style={cont_styles.emailText}> KonGeoS Instagram aufrufen</Text>
-                        </TouchableOpacity>
-                    </View>
-
-                    <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://1drv.ms/b/s!AkDtiNeUNXnNnzfsdyckio7cYWGj')}>
-                            <Text style={cont_styles.emailText}>Datenschutzerklärung</Text>
+                            <Text style={cont_styles.emailText}> KonGeoS Instagram </Text>
                         </TouchableOpacity>
                     </View>
 
