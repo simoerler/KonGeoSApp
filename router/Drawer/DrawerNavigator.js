@@ -82,13 +82,13 @@ const DrawerNavigator = createDrawerNavigator({
             }
         },
 
-        Program: {
+        /*Program: {
             screen: ProgramStack,
             navigationOptions: {
                 drawerLabel: 'Programm',
                 drawerIcon: <Icon name='videogame-asset' type='material'/>
             }
-        },
+        },*/
 
         /*CityGame: {
             screen: GameStack,
