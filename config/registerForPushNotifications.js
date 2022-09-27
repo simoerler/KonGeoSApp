@@ -15,6 +15,7 @@ export async function registerForPushNotificationsAsync() {
         const {status} = await Notifications.getPermissionsAsync();//Permissions.askAsync(Permissions.NOTIFICATIONS);
         finalStatus = status;
         console.log("PERMISSION IS NOT GRANTED");
+        alert('Failed to get push token for push notification!');
     }
     console.log("PERMISSION IS GRANTED");
 

@@ -1,5 +1,6 @@
 const functions = require('firebase-functions');
-const fetch = require('node-fetch');
+
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 var pako = require('pako');
 
 
@@ -8,7 +9,7 @@ admin.initializeApp(functions.config().firebase);
 
 exports.sendPushNotification = functions.database.ref('notifications/{id}').onCreate((change, context) => {
 
-    console.log("DZIAŁA!");
+    console.log("TSCHAKA!");
     console.log(change.val().content);
 
     const root = admin.database().ref();
@@ -16,11 +17,8 @@ exports.sendPushNotification = functions.database.ref('notifications/{id}').onCr
 
     //return the main promise
     return root.child('/usersTokens').once('value').then(function (snapshot) {
-
         snapshot.forEach(function (childSnapshot) {
-
-            const expoToken = childSnapshot.val();
-
+            const expoToken = childSnapshot.val().data;
             if (expoToken) {
                 messages.push({
                     "to": expoToken,

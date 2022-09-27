@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "252504446726",
+    "firebase_url": "https://kongeosapp-e4fb7-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kongeosapp-e4fb7",
+    "storage_bucket": "kongeosapp-e4fb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252504446726:android:30db90ff0c7fb879a2b087",
+        "android_client_info": {
+          "package_name": "com.kongeos.kongeosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252504446726-gehnu3lssakv5d5egl3g13qof8o92s0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOGzxIzS1UZMMk10ZCm5BVnV42qwFWVns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252504446726-gehnu3lssakv5d5egl3g13qof8o92s0g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "252504446726-eks67ei98c8lp43jvnkpf16s7egua801.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kongeos.kongeosapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

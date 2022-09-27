@@ -15,14 +15,21 @@
     ],
     "platforms": [
       "android",
-      "ios"
+      "ios",
+      "web"
     ],
     "ios": {
       "bundleIdentifier": "com.kongeos.kongeosapp"
     },
     "android": {
       "package": "com.kongeos.kongeosapp",
-      "versionCode": 4
+      "versionCode": 4,
+      "permissions": ["NOTIFICATIONS"],
+      "useNextNotificationsApi":true,
+      "googleServicesFile": "./google-services.json"
+    },
+    "notification": {
+      "androidMode" : "default"
     }
   }
 }
