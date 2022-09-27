@@ -15,13 +15,13 @@ class AGScreen extends React.Component {
 
                     <View style={styles.whiteBigContainer}>
                             <Text style={cont_styles.nameText}> AG Nachwuchs </Text>
-                            <Text style={cont_styles.numberText}> Die AG Nachwuchs beschäftigt sich mit der Nachwuchsgewinnung und-förderung im Bereich der Geodäsie. So ist sie z.B für eine Erstsemestrigen Umfrage an allen KonGeoS-Hochschulen und deren Auswertung verantwortlich. Des Weiteren tauschen sich die Teilnehmer*innen über die verschiedenen Konzepte und Herangehensweisen zur Nachwuchsgewinnung und deren Erfolg aus.
+                            <Text style={cont_styles.numberText}>Die AG Nachwuchs beschäftigt sich mit der Nachwuchsgewinnung und-förderung im Bereich der Geodäsie. So ist sie z.B für eine Erstsemestrigen Umfrage an allen KonGeoS-Hochschulen und deren Auswertung verantwortlich. Des Weiteren tauschen sich die Teilnehmer*innen über die verschiedenen Konzepte und Herangehensweisen zur Nachwuchsgewinnung und deren Erfolg aus.
 </Text> 
                     </View>
 
                     <View style={styles.whiteBigContainer}>
                             <Text style={cont_styles.nameText}> AG PR </Text>
-                            <Text style={cont_styles.numberText}> Die AG PR beschäftigt sich mit der Außendarstellung und der öffentlichen Werbung der KonGeoS in Politik und Wirtschaft. Weitere Themen sind der Stand der KonGeoS auf der Fachmesse INTERGEO und die Zusammenarbeit mit dem Förderverein. Außerdem ist die AG zuständig für die offizielle Website der KonGeoS.
+                            <Text style={cont_styles.numberText}>Die AG PR beschäftigt sich mit der Außendarstellung und der öffentlichen Werbung der KonGeoS in Politik und Wirtschaft. Weitere Themen sind der Stand der KonGeoS auf der Fachmesse INTERGEO und die Zusammenarbeit mit dem Förderverein. Außerdem ist die AG zuständig für die offizielle Website der KonGeoS.
 </Text>
                     </View>
 
