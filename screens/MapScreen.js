@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, View, ActivityIndicator} from 'react-native';
-import MapView from 'react-native-maps';
+import MapView , {PROVIDER_GOOGLE} from 'react-native-maps';
 import GetLocation from 'react-native-get-location'
 import colors from "../components/colors";
 import {Icon} from "react-native-elements";
@@ -51,7 +51,9 @@ class MapScreen extends Component {
                 {this.state.latitude ?
                     <MapView
                         customMapStyle={mapStyle}
-                        style={styles.map}
+                        style={StyleSheet.absoluteFillObject}
+                        provider={PROVIDER_GOOGLE}
+                        mapType='hybrid'
                         showsScale={true}
                         showsCompass={true}
                         showsPointsOfInterest={false}
@@ -173,7 +175,7 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 48.1969455289014 longitude: 16.360785301288203}}
+                            coordinate={{latitude: 48.1969455289014, longitude: 16.360785301288203}}
                             title='Saurier-Unterkunft'>
                             <Icon
                                 name='hotel'
