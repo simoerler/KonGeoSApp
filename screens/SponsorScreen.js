@@ -1,38 +1,122 @@
 import React from 'react';
-import {Image, ScrollView, StatusBar, Text, TouchableOpacity, View} from 'react-native';
-import * as OpenAnything from 'react-native-openanything';
+import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import styles from '../components/styles';
 import cont_styles from '../components/cont_style';
 import * as WebBrowser from 'expo-web-browser';
 
 class SponsorScreen extends React.Component {
-
+    
     render() {
         return (
-            <ScrollView>
-                <View style={{height: '90%'}}>
-                    <StatusBar barStyle="light-content"/>
-
-                    <View style={styles.whiteBigContainer}>
-                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://wien22.kongeos.xyz')}>
-                            <Text style={cont_styles.emailText}>Sponsor xyz </Text>
-                            <Image
-                                    source={require('../assets/images/OrganisatorIn1.png')}
-                                    style={{width: 60, height: 60, borderRadius: 30}}/>
-                        </TouchableOpacity>
-                    </View>
-
-                    <View style={styles.singleContact}>
-                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://wien22.kongeos.xyz')}>
-                            <Text style={cont_styles.emailText}>Sponsor abc </Text>
-                            <Image
-                                    source={require('../assets/images/OrganisatorIn2.png')}
-                                    style={{width: 60, height: 60, borderRadius: 30}}/>
-                        </TouchableOpacity>
-                    </View>
-
+          <View style={styles.container}>
+            <Text style={cont_styles.nameText}> Platin Sponsoren </Text>
+             {
+              <ScrollView
+               style={styles.ImageContainer}
+               contentContainerStyle={{
+                flexDirection: "row",
+                flexWrap: "wrap",
+                justifyContent: "center",
+               }}
+               horizontal={false}>
+                
+                <View style={{padding: 5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.ovg.at/de/')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/ovg.jpg')}
+                        style={{width: 110, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
                 </View>
-            </ScrollView>
+
+                <View style={{padding:5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://strabag.com/')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/strabag.jpg')}
+                        style={{width: 110, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={{padding: 5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.rmdatagroup.com/')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/rm.jpg')}
+                        style={{width: 110, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+               </ScrollView>
+              }
+            
+            <Text style={cont_styles.nameText}> Gold Sponsoren </Text>
+             {
+              <ScrollView
+               style={styles.ImageContainer}
+               contentContainerStyle={{
+                flexDirection: "row",
+                flexWrap: "wrap",
+                justifyContent: "center",
+               }}
+               horizontal={false}>
+                <View style={{padding:5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.kopa.at/')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/kopa.jpg')}
+                        style={{width: 100, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={{padding: 5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://leica-geosystems.com/de-de/')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/hexleica.jpg')}
+                        style={{width: 180, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={{padding: 5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.bkg.bund.de/DE/Home/home.html')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/bkg.jpg')}
+                        style={{width: 200, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+              </ScrollView>
+              }
+              <Text style={cont_styles.nameText}> Silber Sponsoren </Text>
+             {
+              <ScrollView
+               style={styles.ImageContainer}
+               contentContainerStyle={{
+                flexDirection: "row",
+                flexWrap: "wrap",
+                justifyContent: "center",
+               }}
+               horizontal={false}>
+
+                <View style={{padding:5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.eposa.at/')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/eposa.jpg')}
+                        style={{width: 100, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={{padding:5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.schubert.at/')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/schubert.jpg')}
+                        style={{width: 100, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={{padding:5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.terragon.at/')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/terragon.jpg')}
+                        style={{width: 100, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+              </ScrollView>}
+          </View>
         )
     }
 }

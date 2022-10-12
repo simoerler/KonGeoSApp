@@ -63,7 +63,7 @@ class ContactScreen extends React.Component {
                     </View>
 
                     <View style={styles.mailContainer}>
-                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://chat.whatsapp.com/CPsAboqS4N29dpDxalfZ6z')}>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://chat.whatsapp.com/HqLMOSuaEdv65H3dHIdzW7')}>
                             <Text style={cont_styles.emailText}> Wien WhatsApp Gruppe beitreten </Text>
                         </TouchableOpacity>
                     </View>
@@ -83,6 +83,12 @@ class ContactScreen extends React.Component {
                     <View style={styles.mailContainer}>
                         <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.instagram.com/kongeos_dach/')}>
                             <Text style={cont_styles.emailText}> KonGeoS Instagram </Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.mailContainer}>
+                        <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://chat.whatsapp.com/HqLMOSuaEdv65H3dHIdzW7')}>
+                            <Text style={cont_styles.emailText}> KonGeoS WhatsApp Gruppe beitreten </Text>
                         </TouchableOpacity>
                     </View>
 

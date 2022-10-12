@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 5,
     elevation: 2,
-  },
+  }, 
+
   white_Left_Container: {
     backgroundColor: colors.white,
     width: '40%',
@@ -68,6 +69,12 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 2,
 
+  },
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   greyMedium_Container: {
@@ -104,6 +111,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 5,
     elevation: 2,
+  },
+  ImageContainer: {
+    marginHorizontal: 16,
+    marginTop: 5,
+    width: "100%",
   },
 })
 
