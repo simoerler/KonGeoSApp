@@ -164,17 +164,6 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
-                            coordinate={{latitude: 52.242152, longitude: 21.009646}}
-                            title="Teatro Cubano">
-                            <Icon
-                                name='local-bar'
-                                raised={true}
-                                size={15}
-                                color={colors.kongeosOrange}
-                                reverse={true}
-                            />
-                        </MapView.Marker>
-                        <MapView.Marker
                             coordinate={{latitude: 48.1969455289014, longitude: 16.360785301288203}}
                             title='Saurier-Unterkunft'>
                             <Icon
