@@ -153,6 +153,17 @@ class MapScreen extends Component {
                             />
                         </MapView.Marker>
                         <MapView.Marker
+                            coordinate={{latitude: 48.21766524714572, longitude: 16.3421124184863}}
+                            title="all iN club">
+                            <Icon
+                                name='bar'
+                                raised={true}
+                                size={15}
+                                color={colors.kongeosBlue}
+                                reverse={true}
+                            />
+                        </MapView.Marker>
+                        <MapView.Marker
                             coordinate={{latitude: 48.208338945585346, longitude: 16.373468607462957}}
                             title="Stephansdom">
                             <Icon
