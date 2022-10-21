@@ -156,7 +156,7 @@ class MapScreen extends Component {
                             coordinate={{latitude: 48.21766524714572, longitude: 16.3421124184863}}
                             title="all iN club">
                             <Icon
-                                name='bar'
+                                name='local-bar'
                                 raised={true}
                                 size={15}
                                 color={colors.kongeosBlue}
