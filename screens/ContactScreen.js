@@ -22,7 +22,7 @@ class ContactScreen extends React.Component {
                     <View style={styles.singleContact}>
                         <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
                             <Text style={cont_styles.nameText}> Orga-Team Notfallnummer </Text>
-                            <Text style={cont_styles.numberText}> +49 152 23494382 </Text>
+                            <Text style={cont_styles.numberText}> +43 677 64801701</Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
                                     source={require('../assets/images/OrganisatorIn1.png')}
