@@ -10,14 +10,18 @@ const ActivityDetails = props => {
     const activityDetails = navigation.getParam('activity', 'default value');
     console.log("ActivityDetails: " + activityDetails);
 
-    let image = require('../../assets/images/Places/tu_wien.jpg');
+    let image = require('../../assets/images/Places/wien.jpg');
     if (activityDetails.place === "Hauptbahnhof Wien")
         image = require('../../assets/images/Places/wien_hauptbahnhof.jpg');
     if (activityDetails.place === "Unterkunft")
         image = require('../../assets/images/Places/unterkunft.jpg');
+    if (activityDetails.place === "Freihaus TU Wien")
+        image = require('../../assets/images/Places/tu_wien.jpg');
+    if (activityDetails.place === "Gußhaus TU Wien")
+        image = require('../../assets/images/Places/gusshaus.jpg');
     if (activityDetails.place === "TU Wien")
         image = require('../../assets/images/Places/tu_wien.jpg');
-    if (activityDetails.place === "Fotoort")
+    if (activityDetails.placeDetails === "Treffpunkt vor Gußhaus")
         image = require('../../assets/images/gruppenfoto.jpg');
 
 

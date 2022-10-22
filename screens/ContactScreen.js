@@ -20,12 +20,12 @@ class ContactScreen extends React.Component {
                     </View>
 
                     <View style={styles.singleContact}>
-                        <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
+                        <TouchableOpacity onPress={() => OpenAnything.Call('+4367764801701')}>
                             <Text style={cont_styles.nameText}> Orga-Team Notfallnummer </Text>
                             <Text style={cont_styles.numberText}> +43 677 64801701</Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
-                                    source={require('../assets/images/OrganisatorIn1.png')}
+                                    source={require('../assets/images/emergency.jpg')}
                                     style={{width: 60, height: 60, borderRadius: 30}}/>
                             </View>
                         </TouchableOpacity>
@@ -33,7 +33,7 @@ class ContactScreen extends React.Component {
 
 
                     <View style={styles.singleContact}>
-                        <TouchableOpacity onPress={() => OpenAnything.Call('112')}>
+                        <TouchableOpacity onPress={() => OpenAnything.Call('144')}>
                             <Text style={cont_styles.nameText}> Notruf </Text>
                             <Text style={cont_styles.numberText}> 144 </Text>
                             <View style={cont_styles.photoContainer}>
@@ -45,12 +45,12 @@ class ContactScreen extends React.Component {
                     </View>
 
                     <View style={styles.singleContact}>
-                        <TouchableOpacity onPress={() => OpenAnything.Call('+49')}>
+                        <TouchableOpacity onPress={() => OpenAnything.Call('133')}>
                             <Text style={cont_styles.nameText}> Polizei </Text>
                             <Text style={cont_styles.numberText}> 133 </Text>
                             <View style={cont_styles.photoContainer}>
                                 <Image
-                                    source={require('../assets/images/OrganisatorIn2.png')}
+                                    source={require('../assets/images/police-car.png')}
                                     style={{width: 60, height: 60, borderRadius: 30}}/>
                             </View>
                         </TouchableOpacity>

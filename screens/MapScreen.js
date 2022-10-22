@@ -53,15 +53,15 @@ class MapScreen extends Component {
                         customMapStyle={mapStyle}
                         style={StyleSheet.absoluteFillObject}
                         provider={PROVIDER_GOOGLE}
-                        mapType='hybrid'
+                        mapType='standard'
                         showsScale={true}
                         showsCompass={true}
                         showsPointsOfInterest={false}
                         initialRegion={{
                             latitude:  48.195,
-                            longitude: 16.369,
-                            latitudeDelta: 0.03,
-                            longitudeDelta: 0.02
+                            longitude: 16.352,
+                            latitudeDelta: 0.08,
+                            longitudeDelta: 0.07
                         }}>
 
                         <MapView.Marker
@@ -176,7 +176,7 @@ class MapScreen extends Component {
                         </MapView.Marker>
                         <MapView.Marker
                             coordinate={{latitude: 48.1969455289014, longitude: 16.360785301288203}}
-                            title='Saurier-Unterkunft'>
+                            title='Saurier-Unterkunft (Wombats Hostel)'>
                             <Icon
                                 name='hotel'
                                 raised={true}

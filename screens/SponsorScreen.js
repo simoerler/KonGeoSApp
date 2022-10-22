@@ -32,7 +32,15 @@ class SponsorScreen extends React.Component {
                   <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://strabag.com/')}>
                     <Image 
                         source={require('../assets/images/Sponsoren/strabag.jpg')}
-                        style={{width: 110, height: 100, resizeMode:"center"}}/>
+                        style={{width: 180, height: 100, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={{padding: 5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://wien.arching.at/home.html')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/zt_platin.jpg')}
+                        style={{width: 180, height: 100, resizeMode:"center"}}/>
                   </TouchableOpacity>
                 </View>
 
@@ -60,7 +68,7 @@ class SponsorScreen extends React.Component {
                   <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.kopa.at/')}>
                     <Image 
                         source={require('../assets/images/Sponsoren/kopa.jpg')}
-                        style={{width: 100, height: 100, resizeMode:"center"}}/>
+                        style={{width: 100, height: 50, resizeMode:"center"}}/>
                   </TouchableOpacity>
                 </View>
 
@@ -68,7 +76,7 @@ class SponsorScreen extends React.Component {
                   <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://leica-geosystems.com/de-de/')}>
                     <Image 
                         source={require('../assets/images/Sponsoren/hexleica.jpg')}
-                        style={{width: 180, height: 100, resizeMode:"center"}}/>
+                        style={{width: 180, height: 50, resizeMode:"center"}}/>
                   </TouchableOpacity>
                 </View>
 
@@ -76,7 +84,22 @@ class SponsorScreen extends React.Component {
                   <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.bkg.bund.de/DE/Home/home.html')}>
                     <Image 
                         source={require('../assets/images/Sponsoren/bkg.jpg')}
-                        style={{width: 200, height: 100, resizeMode:"center"}}/>
+                        style={{width: 130, height: 50, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={{padding: 5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.bev.gv.at/portal/page?_pageid=713,1604790&_dad=portal&_schema=PORTAL')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/BEV_Gold.jpg')}
+                        style={{width: 100, height: 60, resizeMode:"center"}}/>
+                  </TouchableOpacity>
+                </View>
+                <View style={{padding: 5}}>
+                  <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.bkg.bund.de/DE/Home/home.html')}>
+                    <Image 
+                        source={require('../assets/images/Sponsoren/geopp_gold.jpg')}
+                        style={{width: 100, height: 50, resizeMode:"center"}}/>
                   </TouchableOpacity>
                 </View>
               </ScrollView>
@@ -96,7 +119,7 @@ class SponsorScreen extends React.Component {
                   <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.eposa.at/')}>
                     <Image 
                         source={require('../assets/images/Sponsoren/eposa.jpg')}
-                        style={{width: 100, height: 100, resizeMode:"center"}}/>
+                        style={{width: 100, height: 60, resizeMode:"center"}}/>
                   </TouchableOpacity>
                 </View>
 
@@ -104,7 +127,7 @@ class SponsorScreen extends React.Component {
                   <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.schubert.at/')}>
                     <Image 
                         source={require('../assets/images/Sponsoren/schubert.jpg')}
-                        style={{width: 100, height: 100, resizeMode:"center"}}/>
+                        style={{width: 100, height: 60, resizeMode:"center"}}/>
                   </TouchableOpacity>
                 </View>
 
@@ -112,7 +135,7 @@ class SponsorScreen extends React.Component {
                   <TouchableOpacity onPress={() => WebBrowser.openBrowserAsync('https://www.terragon.at/')}>
                     <Image 
                         source={require('../assets/images/Sponsoren/terragon.jpg')}
-                        style={{width: 100, height: 100, resizeMode:"center"}}/>
+                        style={{width: 100, height: 60, resizeMode:"center"}}/>
                   </TouchableOpacity>
                 </View>
               </ScrollView>}
