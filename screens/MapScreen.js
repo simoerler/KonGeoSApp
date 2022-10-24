@@ -59,9 +59,9 @@ class MapScreen extends Component {
                         showsPointsOfInterest={false}
                         initialRegion={{
                             latitude:  48.195,
-                            longitude: 16.352,
-                            latitudeDelta: 0.08,
-                            longitudeDelta: 0.07
+                            longitude: 16.369,
+                            latitudeDelta: 0.03,
+                            longitudeDelta: 0.02
                         }}>
 
                         <MapView.Marker
