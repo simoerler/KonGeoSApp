@@ -45,6 +45,11 @@ class PresentationsScreen extends React.Component {
                             <Text style={cont_styles.numberText}>Die U5 wird nach Fertigstellung der ersten Baustufe ab 2026 die bestehenden U2-Stationen Karlsplatz, Museumsquartier, Volkstheater und Rathaus übernehmen und bis zum Frankhplatz, im Universitätsviertel, fahren.
 </Text>
                     </View>
+                    <View style={styles.whiteBigContainer}>
+                            <Text style={cont_styles.nameText}> Atominstitut der TU Wien </Text>
+                            <Text style={cont_styles.numberText}>Das Atominstitut, früher Atominstitut der österreichischen Universitäten, ist ein Institut der Fakultät für Physik der TU Wien. Mit seinem 1962 in Betrieb genommenen Forschungsreaktor TRIGA Mark II ist es heute die einzige in Österreich verbliebene Einrichtung, die über einen laufenden Kernspaltungsreaktor verfügt.
+</Text>
+                    </View>
                     
                     
             
